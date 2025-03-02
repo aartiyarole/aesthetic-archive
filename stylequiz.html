@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your style?</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popper.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      
+      body{
+        height: 100%;
+        margin: 0;
+      }
+      
+      .quiz-container {
+        max-width: 700px;
+        height: 400px;
+        margin-top: 30px;
+        
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 4px 4px 8px rgba(215, 43, 43, 0.3);
+      }
+     
+      .question{
+        padding: 20px;
+      }
+      .question {
+        display: none;
+      }
+      .question.active {
+        display: block;
+      }
+       input{
+        padding: 0px 30px;
+        margin:10px 5px;
+        
+      }
+      input:checked{
+        background-color: black !important;
+        color: white !important;
+      }
+      .result-container {
+        display: none;
+        text-align: center;
+      }
+      
+      .btn{
+        margin-top: 50px;
+      }
+      @media  (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+        height: auto;
+        margin-bottom: 120px;
+    }
+
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+     <!--navbar starts-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Aesthetic Archive</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspo.html">Inspo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aesthetic.html">Aesthetic Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="stylequiz.html">Style Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--navbar ends-->
+
+  <!-- Quiz Section -->
+  <div class="quiz-container mx-auto ">
+    <h1 class="text-center mb-4 ">Which Aesthetic Are You?</h1>
+    <form id="quiz-form">
+      <div class="question active" data-question="q1">
+        <h5>1. What describes your ideal outfit?</h5>
+        <div class="form-group">
+          <input type="radio" name="q1" value="artcore" required> Bright and bold colors<br>
+          <input type="radio" name="q1" value="cottagecore"> Flowery dresses and cozy sweaters<br>
+          <input type="radio" name="q1" value="dark_academia"> Tailored suits and neutral tones<br>
+          <input type="radio" name="q1" value="baddies"> Trendy and edgy styles<br>
+        </div>
+      </div>
+      
+      <div class="question" data-question="q2">
+        <h5>2. What do you prefer for an ideal hobby?</h5>
+        <div class="form-group">
+          <input type="radio" name="q2" value="girl_next_door" required> Gardening or cooking<br>
+          <input type="radio" name="q2" value="e_girl"> Streaming or video gaming<br>
+          <input type="radio" name="q2" value="french_it_girl"> Fashion styling<br>
+          <input type="radio" name="q2" value="artcore"> Painting or crafting<br>
+        </div>
+      </div>
+
+      <div class="question" data-question="q3">
+        <h5>3. What kind of colors are you drawn to?</h5>
+        <div class="form-group">
+          <input type="radio" name="q3" value="dark_academia" required> Deep, muted, and earthy tones<br>
+          <input type="radio" name="q3" value="baddies"> Neon and bold contrasts <br>
+          <input type="radio" name="q3" value="french_it_girl"> Neutral pastels and chic blacks<br>
+          <input type="radio" name="q3" value="cottagecore"> Soft, warm, and natural shades<br>
+        </div>
+      </div>
+
+      <div class="question" data-question="q4">
+        <h5>4. What is your ideal weekend activity?</h5>
+        <div class="form-group">
+          <input type="radio" name="q4" value="girl_next_door" required> Relaxing with friends or family<br>
+          <input type="radio" name="q4" value="e_girl"> Watching anime or scrolling TikTok<br>
+          <input type="radio" name="q4" value="artcore"> Visiting an art gallery or doing DIY projects<br>
+          <input type="radio" name="q4" value="dark_academia"> Reading a book or writing in a journal<br>
+        </div>
+      </div>
+
+      <div class="question" data-question="q5">
+        <h5>5. Which type of aesthetic location appeals to you most?</h5>
+        <div class="form-group">
+          <input type="radio" name="q5" value="cottagecore" required> A cozy countryside cottage<br>
+          <input type="radio" name="q5" value="baddies"> A vibrant cityscape with neon lights<br>
+          <input type="radio" name="q5" value="french_it_girl"> A chic café in Paris<br>
+          <input type="radio" name="q5" value="dark_academia"> An old library or ivy-covered campus<br>
+        </div>
+      </div>
+
+      <div class="question" data-question="q6">
+        <h5>6. Which kind of accessories do you like the most?</h5>
+        <div class="form-group">
+          <input type="radio" name="q6" value="art_core" required> Statement pieces with bold patterns <br>
+          <input type="radio" name="q6" value="e_girl"> Chunky chains and colorful hair clips<br>
+          <input type="radio" name="q6" value="french_it_girl"> Minimalistic and elegant jewelry<br>
+          <input type="radio" name="q6" value="artcore"> Simple and functional pieces<br>
+        </div>
+      </div>
+
+      <div class="question" data-question="q7">
+        <h5>7. What would be your ideal Instagram post?</h5>
+        <div class="form-group">
+          <input type="radio" name="q7" value="girl_next_door" required> A bold outfit with a luxury vibe<br>
+          <input type="radio" name="q7" value="e_girl"> A cozy, nature-inspired flat lay<br>
+          <input type="radio" name="q7" value="french_it_girl"> A quirky, colorful selfie<br>
+          <input type="radio" name="q7" value="artcore"> A moody, sepia-toned photo of a book<br>
+        </div>
+      </div>
+
+  
+      <div class="result-container" id="result-container">
+        <h2>Your Aesthetic: <span id="result" style="text-shadow: 2px 0px grey;"></span></h2>
+        <button class="btn btn-secondary " onclick="location.reload()">Take the Quiz Again</button>
+      </div>
+      
+      <button type="button" class="btn btn-primary mt-3 px-5" id="next-btn">Next</button>
+    </form>
+</div>
+
+  <!--quiz section-->
+
+  
+  
+
+  <!--footer starts-->
+  <footer class=" text-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">
+        <a href="#" >Back to top</a>
+      </p>
+
+      <p class="mb-0">
+        New to Aesthetic Archive?
+        <a href="home.html" >Visit the homepage</a> or
+        <a href="about.html" >About Us</a>.
+      </p>
+    </div>
+  </footer>
+  <script>
+    const questions = document.querySelectorAll('.question');
+    const nextBtn = document.getElementById('next-btn');
+    const resultContainer = document.getElementById('result-container');
+    let currentQuestionIndex = 0;
+    const answers = {};
+
+    nextBtn.addEventListener('click', () => {
+      const currentQuestion = questions[currentQuestionIndex];
+      const selectedOption = currentQuestion.querySelector('input[type="radio"]:checked');
+
+      if (!selectedOption) {
+        alert('Please select an answer!');
+        return;
+      }
+
+      // Save the answer
+      answers[currentQuestion.dataset.question] = selectedOption.value;
+
+      // Move to the next question or show the result
+      currentQuestion.classList.remove('active');
+      currentQuestionIndex++;
+
+      if (currentQuestionIndex < questions.length) {
+        questions[currentQuestionIndex].classList.add('active');
+      } else {
+        nextBtn.style.display = 'none';
+        calculateResult();
+      }
+    });
+
+    function calculateResult() {
+      const counts = {};
+      Object.values(answers).forEach(answer => {
+        counts[answer] = (counts[answer] || 0) + 1;
+      });
+
+      const result = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+      document.getElementById('result').textContent = result.replace(/_/g, ' ').toUpperCase();
+      resultContainer.style.display = 'block';
+    }
+  </script>
+</body>
+
+</body>
+</html>

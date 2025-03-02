@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popper.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .card-container {
+        padding-bottom: 120px;
+      }
+      
+      .carousel,
+      .carousel-inner {
+        z-index: 0;
+      }
+      
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333333;
+      }
+
+      .card-text {
+        font-size: 0.95rem;
+        color: rgb(79, 77, 77);
+      }
+
+      .card:hover {
+        transform: translateY(5px);
+      }
+
+      .carousel-item img {
+        height: 550px;
+        object-fit: contain;
+      }
+
+      .card img {
+        object-fit: cover;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .card {
+        margin: 10px;
+        border-radius: 20px;
+        border: 1px solid grey;
+        box-shadow: 0px 5px 10px rgba(196, 72, 72, 0.4);
+        transition: transform 0.1s ease-out;
+        background-color: #ffffff;
+      }
+      footer{
+        position:relative;
+        bottom:0;
+
+
+      }
+      .carousel-control-prev-icon,.carousel-control-next-icon{
+        border-radius: 20px;
+        background-color: rgb(226, 208, 208);
+        width:60px;
+        height: 100px;
+        
+      }
+      .carousel-control-prev-icon:hover,.carousel-control-next-icon:hover{
+        border:1px solid grey;
+      }
+      @media (width:320px){
+        
+        .carousel-control-prev-icon,.carousel-control-next-icon{
+        border-radius: 20px;
+        background-color: rgb(178, 140, 140);
+        width:20px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .card-container {
+        padding-bottom: 10px;
+      }
+      .carousel-item,.carousel-inner,.carousel-item img{
+        height: 400px;
+
+      }
+      .blog-title{
+        font-size: xx-large;
+        font-weight: 700;
+      }
+
+}
+      
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Aesthetic Archive</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspo.html">Inspo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aesthetic.html">Aesthetic Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stylequiz.html">Style Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Paul Scarone, Art et la Mode, 22De1928.jpg" class="d-block w-100" alt="image" />
+          
+        </div>
+        <div class="carousel-item">
+          <img src="images/0c81188d738b01184cba37d6b3560641.jpg" class="d-block w-100" alt="..." />
+          
+        </div>
+        <div class="carousel-item">
+          <img src="images/loveeee.jpg" class="d-block w-100" alt="..." />
+          
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!--blog title-->
+    <div
+      class="display-3 blog-title"
+      style="width: 200px; text-align: center; margin: 0 auto"
+    >
+      Blogs
+    </div>
+
+    <!--cards-->
+    <div class="text-light bg-default text-center py-4">
+      <div class="container card-container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/carousel2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Bold is Beautiful"</h5>
+                  <p class="card-text">
+                    Fashion is about self-expression. Don’t be afraid to mix
+                    prints, colors, and textures. The more daring, the better!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/demo2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Sustainable Chic"</h5>
+                  <p class="card-text">
+                    Sustainable fashion isn’t just eco-friendly, it’s a whole
+                    vibe. Choose timeless pieces that last and keep you looking
+                    fresh.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/demo5.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Street Style Evolution"</h5>
+                  <p class="card-text">
+                    Streetwear is more than just a trend—it’s a movement. From
+                    hoodies to sneakers, it's about comfort and coolness
+                    combined.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/demo4.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Retro Rewind"</h5>
+                  <p class="card-text">
+                    The '90s called, and they’re back! From oversized jackets to
+                    funky patterns, vintage pieces never go out of style.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/demo5.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Minimalist Magic"</h5>
+                  <p class="card-text">
+                    Simple doesn't mean boring. Clean lines, neutral tones, and
+                    quality fabrics create a chic, effortless look that speaks
+                    volumes.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/carousel2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Just A Aesthetic"</h5>
+                  <p class="card-text">
+                    Fashion has no rules. Experiment with mixing traditionally
+                    to create your own unique aesthetic.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="aesthetic.html" style="text-decoration: none">
+                <img
+                  class="card-img-top"
+                  src="images/c6.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">"Bold Accessories"</h5>
+                  <p class="card-text">
+                    Sometimes, all you need is the perfect accessory. Whether
+                    it’s chunky jewelry or a statement bag, let your accessories
+                    speak for you.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">
+          <a href="#">Back to top</a>
+        </p>
+
+        <p class="mb-0">
+          New to Aesthetic Archive?
+          <a href="home.html">Visit the homepage</a> or
+          <a href="about.html">About Us</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

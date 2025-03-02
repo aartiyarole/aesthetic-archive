@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know your Aesthetic</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popper.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      footer{
+        position:relative;
+        bottom:0;
+
+
+      }
+        .data-container{
+            padding: 30px 0 120px 0px;
+             max-width: 1000px;
+             margin: 5px auto;
+        }
+
+/* Accordion Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Header */
+.card-header {
+  background-color: #eec1e5; /* Light grey */
+  border-radius: 10px 10px 0 0;
+}
+
+.card-header .btn-link {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  text-decoration: none;
+  
+}
+.card-header .btn-link:hover {
+  background-color: #f2dfeb; /* Light steel blue on hover */
+  
+ 
+}
+
+.card-header .btn-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Accordion Body */
+.card-body {
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  color: #555;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Color for Accent Elements */
+span {
+  font-weight: bolder;
+  color: #0c0829; /* Slate blue for subtle emphasis */
+}
+
+
+.card-body h5{
+    font-size: 20px;
+}
+.card-body h4 {
+  color: #56555c; /* Slate Blue */
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-shadow:  1px 1px #333;
+  text-decoration: underline;
+}
+
+.card-body p {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .data-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .card-header .btn-link {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-body h5 {
+    font-size: 18px;
+  }
+
+  .card-body h4 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 14px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Aesthetic Archive</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspo.html">Inspo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aesthetic.html">Aesthetic Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stylequiz.html">Style Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style=" font-size:30px;padding-top:20px;font-weight: 1000;  text-align: center; text-shadow: 2px 2px rgb(223, 180, 187);">
+        Know Your Aesthetic
+    </div>
+    <!--aesthetic data-->
+    <div class="data-container">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Art Core
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse "
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            <h5 class="card-text">
+              Artcore is a vibrant, expressive aesthetic that combines visual
+              art, surrealism, and an eclectic mix of styles.
+            </h5>
+            <h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span> Bright, Neon Colors ,Pastels with
+              Bold Contrasts,Monochrome with Pops of Color,Artistic Prints
+            </p>
+            <p>
+              <span> Unique Elements : </span> Experimental Fashion , Playful
+              Accessories , Makeup as Art.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+            Baddie Core
+          </button>
+          </h2>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body">
+            <h5 class="card-text">
+                Baddie Core is a bold, confident, and empowering aesthetic that embraces unapologetic self-expression. It’s all about exuding confidence and a fierce, high-maintenance attitude, while incorporating street style, glam, and a touch of luxury.      </h5>
+            <h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span>  Neutrals & Earth Tones ,Bold, Statement Colors , Monochrome Looks , Metallic Accents
+            </p>
+            <p>
+              <span> Unique Elements : </span>  Signature Hairstyling ,Statement Accessories, Street Chic , Attitude and Energy
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Cottagecore
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseThree"
+          class="collapse"
+          aria-labelledby="headingThree"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body">
+            <h5 class="card-text">
+                Cottagecore is a romantic, nature-inspired aesthetic that emphasizes the simple pleasures of rural life and rural aesthetics. It celebrates the beauty of the countryside, organic farming, and rustic living, focusing on harmony with nature and a slower, more peaceful way of life.     </h5>
+            <h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span>  Pastels & Soft Tones, Earthy and Natural , Floral Prints & Patterns , Warm Tones
+            <p>
+              <span> Unique Elements : </span> Nature-Inspired Clothing , Gardening & Farming Elements , Rustic & Vintage Decor , Wholesome Activities
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+            Dark Academia 
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseFour"
+          class="collapse"
+          aria-labelledby="headingFour"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body">
+            <h5 class="card-text">
+                Dark Academia is an aesthetic that revolves around intellectualism, the pursuit of knowledge, and a love for classical literature, philosophy, and the arts. It draws inspiration from gothic architecture, old universities, and the mystique of academic life. 
+                <h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span>  Muted & Earthy Tones , Neutral & Dark Hues ,Accents of Gold & Brass  ,Plaid & Tweed Patterns.
+            <p>
+              <span> Unique Elements : </span> Vinatage Clothing, Intellectual Hobbies , Moody , Academic Spaces, Romaticization of Melancholy , Historic Influence
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+            E-Girl Aesthetic 
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseFive"
+          class="collapse"
+          aria-labelledby="headingFive"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body">
+            <h5 class="card-text">
+                The E-Girl aesthetic is a playful and rebellious subculture that emerged from the online world, particularly from social media platforms like TikTok, Instagram, and Twitch. It draws inspiration from a mix of alternative, punk, goth, and anime-inspired styles. E-Girls are known for their bold and expressive fashion, combining edgy streetwear with soft, whimsical elements.  <h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span>  Neon & Bright Colors , Pastels & Soft Tones ,Black & Dark Tones ,Metallics & Accents
+            <p>
+              <span> Unique Elements : </span> Bold Makeup Looks, Colored & Pastel Hair , Layered & Grunge-Inspired Fashion Anime & Cartoon References,Social Media & Gaming Culture:
+          </div>
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+            
+French It Girl
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseSix"
+          class="collapse"
+          aria-labelledby="headingSix"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body">
+            <h5 class="card-text">
+                The French It Girl aesthetic is synonymous with effortless, chic elegance. It is a style that has been admired for its ability to look fashionable without appearing overly styled. French It Girls, often seen as icons of modern Parisian style, have mastered the art of looking naturally put-together, with a focus on minimalist, yet stylish clothing and an air of nonchalance.<h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span>  Neutral Tones , Pop of Red , Soft Pastels , Monochrome Outfits.
+            <p>
+              <span> Unique Elements : </span> The Little Black Dress , Parisian Scarf , Classic Footwear , The “No Makeup” Makeup Look , Vintage Inspired </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingSeven">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+            Girl Next Door
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseSeven"
+          class="collapse"
+          aria-labelledby="headingSeven"
+          data-parent="#accordionExample"
+        >
+        <div class="card-body">
+            <h5 class="card-text">
+                The Girl Next Door aesthetic embodies a charming, approachable, and down-to-earth style. It’s all about that sweet, girl-next-door vibe, where fashion is both cute and relatable, blending simplicity with a touch of femininity. This aesthetic highlights a natural beauty that doesn’t rely on heavy makeup or extravagant clothing, making it feel authentic and effortlessly stylish.<h4>Things to Look for</h4>
+            <p>
+              <span> Color Pattern : </span>  Layered, Practical Outfits, Soft, Earthy Tones & Pastels ,Cute & Playful Accessories  ,Preppy & Vintage Elements ,Soft Pastels
+            <p>
+              <span> Unique Elements : </span> Polished Casual Looks , Easy, Natural Makeup
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+    
+
+    <!--footer-->
+    <footer class=" text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">
+          <a href="#" >Back to top</a>
+        </p>
+        
+        <p class="mb-0">
+          New to Aesthetic Archive?
+          <a href="home.html">Visit the homepage</a> or
+          <a href="about.html" >About Us</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

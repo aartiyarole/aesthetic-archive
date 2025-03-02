@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popper.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <style>
+      footer{
+        position:relative;
+        bottom:0;
+
+
+      }
+      main {
+        margin-bottom: 150px;
+        margin-top: 20px;
+        max-width: 1000px;
+        display: flex;
+      }
+
+      .details {
+        width: 550px;
+      }
+      .ourform {
+        padding-left: 30px;
+      }
+      .details h2 {
+        text-decoration: underline;
+      }
+
+      .contact-form {
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        background-color: whitesmoke;
+        border: 1px solid grey;
+        box-shadow: 2px 3px 7px rgb(67, 66, 66);
+        border-radius: 20px;
+      }
+      .contact-form input,
+      label {
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        background-color: #f2dfeb;
+      }
+
+      .btn {
+        margin-left: 111px;
+        background-color: white;
+        border: 1px solid grey;
+        width: 200px;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+      }
+      @media (width: 320px) {
+        main {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .details,
+  .ourform {
+    width: 90%;
+    border-right: none;
+    padding: 0 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .details h2,
+  .container {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 20px;
+    height: auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Aesthetic Archive</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspo.html">Inspo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aesthetic.html">Aesthetic Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stylequiz.html">Style Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--main section-->
+    <main class="mx-auto">
+      <section class="details">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            At the Aesthetic Archive, we are passionate about the intersection
+            of beauty and creativity. Our team consists of art enthusiasts,
+            curators, and designers who are dedicated to bringing you the best
+            visual experiences.
+          </p>
+          <p>
+            Founded in 2024, our mission is to offer a space where people can
+            find inspiration, explore diverse artistic expressions, and connect
+            with like-minded individuals who appreciate aesthetics. We believe
+            that art is a powerful form of expression, and we want to make it
+            accessible to everyone.
+          </p>
+        </div>
+        <div class="container">
+          <h2>Join the Archive</h2>
+          <p>
+            If you're an artist, designer, or photographer and would like to
+            contribute your work to our archive, we'd love to hear from you!
+            We're always on the lookout for fresh, inspiring pieces that align
+            with our vision of beauty and creativity.
+          </p>
+        </div>
+      </section>
+      <section class="ourform">
+        <div class="contact-form">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleFirstName">First Name</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col">
+                <label for="exampleLastName">Last Name</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="exampleInputEmail">Email ID</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="email@address.com"
+                />
+              </div>
+              <div class="col">
+                <label for="exampleCity">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Delhi,Mumbai,etc"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"
+                >Reason for Contact</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="6"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">
+          <a href="#">Back to top</a>
+        </p>
+
+        <p class="mb-0">
+          New to Aesthetic Archive?
+          <a href="home.html">Visit the homepage</a> or
+          <a href="about.html">About Us</a>.
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Initialize EmailJS with your Public Key
+      
+emailjs.init("lc7Pi4nRwctWn_EAZ");
+console.log("EmailJS Initialized:", emailjs);
+
+// Select the form and add an event listener
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    let formData = {
+    to_name: "Aesthetic Archive Team",
+    from_name: document.querySelector("[placeholder='First name']").value + " " +
+               document.querySelector("[placeholder='Last name']").value,
+    message: document.querySelector("#exampleFormControlTextarea1").value,
+    email: document.querySelector("[placeholder='email@address.com']").value,
+    city: document.querySelector("[placeholder='Delhi,Mumbai,etc']").value
+};
+
+
+    // Send email using EmailJS
+    emailjs.send("service_p26w2ce", "template_qvopfm4", formData)
+    .then(function(response) {
+        alert("Message sent successfully!");
+        console.log("Success:", response);
+    }, function(error) {
+        alert("Failed to send message. Please try again.");
+        console.error("Error:", error);
+    });
+
+    // Optionally, clear the form fields after submission
+    document.querySelector("form").reset();
+});
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popper.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      footer{
+        position:relative;
+        bottom:0;
+
+
+      }
+      .inspiration-container h3 {
+        font-size: 35px;
+        font-weight: bolder;
+      }
+      .card,
+      .card img {
+        height: 380px;
+        border-radius: 20px;
+      }
+      .card {
+        box-shadow: 2px 4px 3px grey;
+        transition: transform linear 0.5s, box-shadow 0.5s linear;
+      }
+      .card:hover {
+        transform: scale(0.9);
+        box-shadow: 4px 8px 5px lightgrey;
+      }
+
+      img {
+        object-fit: fill;
+      }
+
+      .inspiration-container {
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Aesthetic Archive</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="inspo.html">Inspo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aesthetic.html">Aesthetic Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stylequiz.html">Style Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="inspiration-container">
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">Art Core</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselArtCore"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselArtCore"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselArtCore"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/art1.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/art2.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/art3.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/art4.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/art5.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/art6.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">Baddie Core</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselBaddieCore"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselBaddieCore"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselBaddieCore"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/b1.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/b2.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/b3.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/b4.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/b5.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/b6.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">Cottage Core</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselCottageCore"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselCottageCore"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselCottageCore"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/c1.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/c2.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/c3.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/c4.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/c5.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/c6.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">Dark Academia</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselDarkAcademia"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselDarkAcademia"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselDarkAcademia"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/dark academia outfit.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/dark academia outfit (1).jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/dark academia Outfit _ ShopLook.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/The easiest way to find or create the perfect outfit _ ShopLook.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/Lily diary.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/Dark Academia Outfit Inspiration.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">E-Girl Aesthetic</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselEgirl"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselEgirl"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselEgirl"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/um egirl_ Outfit _ ShopLook.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/Female Outfits  - Female underwear.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/Pick your outfit.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/6fe5b5b9-e93d-411a-8ca9-c29838af7290.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/fd3482aa-9bbd-4339-9a48-75157d994d77.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/outfit inspo☆.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">French It Girl</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselFrenchItGirl"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselFrenchItGirl"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselFrenchItGirl"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/parisian style.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/a242a84e-ad7a-4756-b467-4bc365cde979.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/6 Classic Yet Fresh Outfits Everyone Is Wearing in Paris Right Now.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/10 Parisian Style Basics To Add To Your Fall _ Winter Wardrobe.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/old money in france outfit inspo.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/f21436f6-5e40-466d-8147-bf9bf60c4c43.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3">Girl Next Door</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-dark mb-3 mr-1"
+                href="#carouselGirlNextDoor"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <a
+                class="btn btn-dark mb-3"
+                href="#carouselGirlNextDoor"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselGirlNextDoor"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/nextdoor (1).jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/nextdoor (2).jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/nextdoor (3).jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/nextdoor (4).jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/nextdoor (5).jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="images/nextdoor (6).jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!--footer-->
+    <footer class="text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">
+          <a href="#">Back to top</a>
+        </p>
+
+        <p class="mb-0">
+          New to Aesthetic Archive?
+          <a href="home.html">Visit the homepage</a> or
+          <a href="about.html">About Us</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
